@@ -6,6 +6,7 @@ import {useAuth } from "@/context";
 import { FormEvent, useState } from "react";
 
 
+
 export default function Home() {
 
   // const {user, login, logout} = useContext(AuthContext);
