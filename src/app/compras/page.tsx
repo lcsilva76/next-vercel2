@@ -1,15 +1,18 @@
 "use client"
 
 import { useAuth } from "@/context"
+import { redirect } from "next/navigation"
 
 export default function Tabela() {
   
   const {user} = useAuth()
 
+  
 
   if(user?.nome == ""){
     alert("Para fazer compras, faça antes o login")
-    window.location.assign('/')
+    redirect('/')
+    // window.location.assign('/')
   }
   
     
